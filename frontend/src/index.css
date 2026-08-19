@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-gray-950 text-gray-100 font-sans antialiased;
+  background-image: radial-gradient(circle at top right, rgba(79, 70, 229, 0.1), transparent 400px),
+                    radial-gradient(circle at bottom left, rgba(147, 51, 234, 0.1), transparent 400px);
+  min-height: 100vh;
+}
+
+/* Glass panel utility */
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-700;
+}

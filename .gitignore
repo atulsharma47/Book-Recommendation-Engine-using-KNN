@@ -1,0 +1,32 @@
+# React / Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and ML Models (Crucial to hide these to not expose big data or heavy models)
+backend/data/raw/*.csv
+backend/data/processed/*.csv
+backend/data/raw/*.zip
+backend/models/*.pkl
+backend/models/*.joblib
+backend/models/*.json
+
+# IDEs
+.vscode/
+.idea/
